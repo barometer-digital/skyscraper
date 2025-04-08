@@ -1,13 +1,24 @@
 [tool.poetry]
-name = "bsky-scraper"
+name = "skyscraper"
 version = "0.1.0"
-description = ""
-authors = ["deepfates <deepfates@gmail.com>"]
+description = "A modular and extensible Bluesky API scraper, based on bsky-scraper"
+authors = [
+    "digital.barometer <contact@barometer.digital>",
+    "deepfates <deepfates@gmail.com>"
+]
 readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/barometer-digital/skyscraper"
+repository = "https://github.com/barometer-digital/skyscraper"
+keywords = ["Bluesky", "API", "scraper", "atproto", "data"]
 
 [tool.poetry.dependencies]
 python = ">=3.11,<3.14"
 atproto = "^0.0.55"
+fastapi = "^0.110.0"
+
+[tool.poetry.scripts]
+skyscraper = "skyscraper.cli:main"
 
 [build-system]
 requires = ["poetry-core"]
