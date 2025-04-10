@@ -164,3 +164,4 @@ cython_debug/
 # Project files
 bluesky_posts_*.jsonl
 test.ipynb
+testing.py
